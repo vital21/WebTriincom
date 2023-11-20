@@ -1,0 +1,37 @@
+﻿@model  WebTriinkom.Models.User
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mongodb</title>
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="../../wwwroot/css/site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <h2>Добавление пользователя</h2>
+    <form asp-action="create" asp-controller="registration">
+        <p>
+            <label asp-for="Name">Имя</label><br />
+            <input type="text" asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="Email" ></label>
+        </p>
+       <p>
+            <label asp-for="Email">Емейл</label><br />
+            <input type="text" asp-for="Email" />
+        </p>
+        <p>
+            <label asp-for="Password">Пароль</label><br />
+            <input type="text" asp-for="Password" />
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+</body>
+</html>
