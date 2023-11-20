@@ -12,7 +12,6 @@
 }
 .container {
     background-color: #F5F4FB;
-    margin: 0,auto;
     max-width: 1920px;
     min-height: 100%;
     overflow: hidden;
@@ -102,7 +101,6 @@ body{margin: 0;}
 .infor-btn {
   display: flex;
 }
-
 .in {
     display: flex;
     padding: 10px 20px;
@@ -120,7 +118,6 @@ body{margin: 0;}
     text-transform: uppercase;
     text-decoration: none;
 }
-
 .registration-btn {
     padding: 10px 20px;
     justify-content: center;
@@ -139,19 +136,15 @@ body{margin: 0;}
     text-decoration: none;
     margin-left: 10px;
 }
-
 .menu {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
 }
-/* ��������� <div> - ����� ��� ���������������� ����������� �������� */
 .dropdown {
     display: flex;
     flex-direction: row;
 }
-
-/* ���������� ������� (�� ��������� �����) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -159,33 +152,25 @@ body{margin: 0;}
     min-width: auto;
     z-index: 1;
 }
-
-    /* ������ ������ ����������� ����� */
-    .dropdown-content a {
-        color: black;
-        padding: 15px;
-        text-decoration: none;
-        display: block;
-    }
-
-        /* �������� ���� ������ ��� ��������� */
-        .dropdown-content a:hover {
-            cursor: pointer;
-            background-color: rgba(62, 187, 156, 0.486)
-        }
-
-/* ���������� ���������� ���� ��� ��������� */
+.dropdown-content a {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+ }
+.dropdown-content a:hover {
+  cursor: pointer;
+  background-color: rgba(62, 187, 156, 0.486)
+ }
 .dropdown:hover .dropdown-content {
     display: block;
     margin-top: 20px;
 }
-
 .main {
     background-color: #7267b1;
     margin: 0,auto;
     width: 1920px;
 }
-
 .cart-holder {
     display: flex;
     margin-top: 60px;
@@ -333,7 +318,6 @@ body{margin: 0;}
     height: auto;
     flex-wrap: wrap;
     display: flex;
-    gap: 10px;
 }
 .cart {
     flex: 0 1 calc(33.33% - 10px); /* Ширина 33.33% с отступами между блоками */
@@ -342,6 +326,8 @@ body{margin: 0;}
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid var(--divider, #D8D7DC);
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .text-in-cart-in-info-down-main {
     align-self: stretch;
@@ -364,6 +350,7 @@ body{margin: 0;}
     line-height: 140%; /* 23.8px */
 }
 .cart-in-info-down-main {
+    margin-top: 10px;
     display: flex;
     height: auto;
     width: 390px;
@@ -403,6 +390,7 @@ body{margin: 0;}
     gap: 5px;
 }
 .txt-in-menu-cart-info {
+    margin-left: 5px;
     color: var(--black, #0E021E);
     font-family: Vela Sans;
     font-size: 17px;
@@ -858,9 +846,6 @@ height: 100%;
    margin-left: 44px;
    margin-right: 44px;
   }
-  .footer-info-blok{
-    
-  }
   .under-blok-second-blok-fluter {
     width: auto;
     margin-right: 65px;
@@ -930,7 +915,6 @@ height: 100%;
   }
   .cart-in-info-down-main {
     width: auto;
-    margin-top: 10px;
   }
   .main-cart-servis {
     display: block;
@@ -979,8 +963,6 @@ height: 100%;
   }
   .img-flooter-under-blok{
     margin-top: 10px;
-  }
-  .info-floter-under-blok{
   }
   .flooter-uner-blok {
     text-align: center;
